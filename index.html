@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/src/basics/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mokepon v1</title>
     <script src="/js/mokepon.js"></script>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <h1 class="title">MOKEPON! 🔥💧🌱</h1>
-
+    <div class="logo-container">
+      <img class="logo" src="/src/basics/Mokepon.png" alt="Mokepon" />
+    </div>
     <section id="seleccionar-mascota">
       <h2>Elige tu mascota:</h2>
 
-      <label for="Hipodoge">Hipodoge</label>
-      <input type="radio" name="mascota" id="Hipodoge" />
+      <input type="radio" name="mascota" id="Hipodoge" class="input-hidden" />
+      <label class="tarjeta-de-mokepon" for="Hipodoge">Hipodoge</label>
 
-      <label for="Capipepo">Capipepo</label>
-      <input type="radio" name="mascota" id="Capipepo" />
+      <input type="radio" name="mascota" id="Capipepo" class="input-hidden" />
+      <label class="tarjeta-de-mokepon" for="Capipepo">Capipepo</label>
 
-      <label for="Ratigueya">Ratigueya</label>
-      <input type="radio" name="mascota" id="Ratigueya" />
+      <input type="radio" name="mascota" id="Ratigueya" class="input-hidden" />
+      <label class="tarjeta-de-mokepon" for="Ratigueya">Ratigueya</label>
 
       <button id="boton-mascota">Seleccionar</button>
     </section>
 
     <section id="seleccionar-ataque">
       <h2>Elige tu ataque:</h2>
-      <p>
+      <p id="info-text1">
         Tu mascota <span id="mascota-jugador"></span> tiene
         <span id="vidas-jugador">3</span> vidas
       </p>
-      <p>
+      <p id="info-text1">
         La mascota <span id="mascota-enemigo"></span> del enemigo tiene
         <span id="vidas-enemigo">3</span> vidas
       </p>
@@ -48,5 +49,10 @@
     <section id="reiniciar">
       <button id="boton-reiniciar">Reiniciar</button>
     </section>
+    <footer>
+      <section class="footer">
+        <p>https://platzi.com/p/DavidRB/</p>
+      </section>
+    </footer>
   </body>
 </html>
